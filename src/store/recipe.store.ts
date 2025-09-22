@@ -97,7 +97,7 @@ export const useRecipeStore = create<IRecipeState>((set) => ({
         } catch (error) {
             console.log('error', error);
             set({ error: 'Ошибка при удалении рецепта', isLoading: false });
-            return { success: false, error: 'Ошибка при удалении рецепта' };
+            //return { success: false, error: 'Ошибка при удалении рецепта' };
         }
     },
 }));
